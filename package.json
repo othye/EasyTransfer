@@ -1,0 +1,28 @@
+{
+  "name": "micro-mvc",
+  "version": "1.0.0",
+  "description": "A micro-mvc framework for learning purposes",
+  "main": "assets/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/synyster0fa7x/micro-mvc.git"
+  },
+  "author": "Anthony Tournier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/synyster0fa7x/micro-mvc/issues"
+  },
+  "homepage": "https://gitlab.com/synyster0fa7x/micro-mvc#README",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "node-sass-watcher": "^0.5.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}

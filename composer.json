@@ -1,0 +1,25 @@
+{
+    "name": "synyster0fa7x/mvc-skeleton",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anthony Tournier",
+            "email": "anthony.tournier25@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.0",
+        "vlucas/phpdotenv": "^2.4",
+        "symfony/yaml": "^4.1",
+        "picorm/picorm": "^0.0.7"
+    },
+    "autoload": {
+        "psr-4": {
+          "Controllers\\": "app/controllers/",
+          "Model\\": "app/models/",
+          "Core\\Helpers\\": "core/helpers/",
+          "Core\\Controllers\\": "core/controllers/"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %} 
+
+{% block content %}
+    <h1>Transfers</h1>
+
+
+
+    <form method="POST" action="{{ url('add') }}" enctype="multipart/form-data">
+        <div class="form-row">
+            <div class="col">
+                <input type="email" name="exp_email" class="form-control" placeholder="EXP EMAIL">
+            </div>
+            <div class="col">
+                <input type="email" name="dest_email" class="form-control" placeholder="DEST EMAIL">
+            </div>
+            <div class="col">
+               <textarea class="form-control" name="message" rows="3"></textarea>
+            </div>
+            <div class="col">
+                  <input type="file" name="uploadFile" class="form-control-file">
+            </div>
+            <div class="col">
+                <input type="submit" class="form-control btn-success" value="Validate">
+            </div>
+        </div>
+    </form>
+
+    
+{% endblock %}

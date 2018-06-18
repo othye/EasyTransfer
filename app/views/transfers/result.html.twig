@@ -1,0 +1,18 @@
+{% extends "base.html.twig" %} 
+
+{% block content %}
+    <h1>Success</h1>
+
+    <div class="jumbotron">
+        <p>You sent: {{ file }}</p>
+        <p>To: {{ dest_email }}</p>
+        <p>To: {{ id }}</p>
+        <p>Download link: </p>
+        {# put a button #}
+        <p><a href="{{ url('app/transfers/') ~ file}}">{{ url('app/transfers/') ~ file}}</a></p>
+
+
+    </div>
+
+    
+{% endblock %}

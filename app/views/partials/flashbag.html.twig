@@ -1,0 +1,6 @@
+{% if flashbag.has('alert') %}
+    {% set alert = flashbag.get('alert') %} 
+    <div class="alert alert-{{ alert['type'] }}" role="alert">
+        {{ alert['msg'] }}
+    </div>
+{% endif %}
