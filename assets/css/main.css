@@ -61,7 +61,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+ }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -212,8 +212,8 @@ textarea {
   line-height: inherit; }
 
 button,
-input {
-  overflow: visible; }
+/* input {
+  overflow: visible; } */
 
 button,
 select {

@@ -1,0 +1,9 @@
+RewriteEngine on
+
+#RewriteCond $1 !^(index\.php|assets|robots\.txt)
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
+RewriteRule ^file/([0-9]+)$ index.php?file=$1 [L]

@@ -1,0 +1,321 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "Ederson";
+    src: url("../fonts/Ederson.ttf");
+   }
+
+   @font-face {
+    font-family: "EdersonDeco";
+    src: url("../fonts/EdersonDeco.ttf");
+   }
+
+html {
+    margin: auto;
+    height: 100%;
+    background: url("../img/background.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+body {
+    height: 100%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 100%;
+    padding-top: 55px;
+    background: linear-gradient(rgba(255, 255, 255, 0.288), #ffffff00);
+    z-index: 1000;
+}
+
+.titre {
+    color: #a84d38;
+    font-family: "Ederson", Arial;
+    text-shadow: 1px 1px 2px #000000;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.soulign {
+    margin-top: -60px;
+    margin-left: 210px;
+    color: #FFC147;
+    font-family: "EdersonDeco", Arial;
+    text-shadow: 1px 1px 2px #000000;
+    font-size: 3.5em;
+    font-weight: normal;
+}
+
+.lettrYellow {
+    color: #FFC147;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+}
+
+.bloc_central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    width: 100%;
+    height: 100%;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////// CERCLE ////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.cercle {
+    position: absolute;
+    background:rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    padding-top: 26px;
+    padding-left: 24px;
+    width: 500px;
+    height: 500px;
+    border: 35px solid #FFC147;
+    box-shadow: 0px 0px 5px #000000;
+    z-index: 1200;
+  }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////// LOSANGE ////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.losange {
+    background: #a84d38;
+    width: 380px;
+    height: 380px;
+    transform: rotate(45deg);
+    border: 5px solid #a84d38;
+    box-shadow: 0px 0px 5px #000000;
+    z-index: 900;
+}
+
+.test {
+    position: relative;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////// FORM ////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+form {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 95px;
+    left: 141px;
+    width: 100px;
+    z-index: 900;
+}
+
+.form-envoyerExped {
+    height: 23px;
+    width: 240px;
+    padding-left: 10px;
+    margin-bottom: 9px;
+    background: rgb(248, 248, 248);
+    border: 2px solid rgb(248, 248, 248);
+}
+
+.form-message {
+    height: 80px;
+    width: 240px;
+    padding-top: 3px;
+    padding-left: 10px;
+    margin-bottom: 9px;
+    background: rgb(248, 248, 248);
+    border: 2px solid rgb(248, 248, 248);
+}
+input[type=file]{
+    max-height: 35px;
+    width: 240px; 
+    color: #F2C5B0;
+    margin-bottom: 13px;
+    vertical-align: middle;
+    border: 2px solid #F2C5B0;
+    cursor: pointer;
+}
+
+.col {
+    font-size: 0.8em !important;
+}
+
+.submit {
+    width: 60%;
+    margin-left: 48px;
+    cursor: pointer;
+}
+
+input.form-control.btn-success {
+    cursor: pointer;
+    background: #FFC147;
+    border: 2px solid #FFC147;
+    border-radius: 0em !important;
+    color: #a84d38;
+    font-weight: bold;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+input.form-control.btn-success:hover {
+    border-radius: 0em !important;
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+::-webkit-input-placeholder {
+    font-family: Arial;
+    color: #a84d38;
+    font-size: 1.1em !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-family: Arial;
+    color: #a84d38;
+    font-size: 1.1em !important;
+ }
+
+ ::-moz-placeholder {  /* Firefox 19+ */
+    font-family: Arial;
+    color: #a84d38;
+    font-size: 1.1em !important;
+ }
+
+ :-ms-input-placeholder {  
+    font-family: Arial;
+    color: #a84d38;
+    font-size: 1.1em !important;
+ }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////// SUCCESS + DOWNLOAD ////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.bloc_success {
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    left: 15px;
+    width: 350px;
+    z-index: 900;
+}
+
+.bloc_download {
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    left: 15px;
+    width: 350px;
+    
+    z-index: 900;
+}
+
+h2 {
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 1.1em;
+    text-align: center;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.h2_download {
+    margin-top: -20px;
+    margin-bottom: 25px;
+}
+
+.btnDownload {
+    padding: 8px 35px 8px 35px;
+    cursor: pointer;
+    background: #FFC147;
+    border: 2px solid #FFC147;
+    border-radius: 0em !important;
+    color: #a84d38;
+    font-weight: bold;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.btnDownload:hover {
+    border-radius: 0em !important;
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.backgroundTextOpen {
+    background: rgba(255, 255, 255, 0.842);
+    margin-top: 10px;
+    padding: 3px 8px 3px 8px;
+    color: #a84d38;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 1em;
+}
+
+.backgroundTextEnd {
+    border: 2px solid rgba(255, 255, 255, 0.842);
+    padding: 1px 8px 1px 8px;
+    color: rgba(255, 255, 255, 0.842);
+    font-weight: normal;
+    font-family: Arial;
+    font-size: 1em;
+}
+
+.bloc_message {
+    margin: auto;
+}
+
+.message {
+    padding: 5px;
+    font-family: Arial;
+    font-size: 0.9em;
+    margin: -50px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////// FOOTER ////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+footer {
+    position: absolute;
+    margin-top: -70px;
+    font-weight: normal;
+    color: #ffffff;
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.151);
+    z-index: 1100;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}

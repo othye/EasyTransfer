@@ -14,13 +14,15 @@ class Transfer extends \PicORM\Model
         'exp_email',
         'dest_email',
         'path',
+        'fake_path',
         'message',
         'creation_date'
     );
-
+    public $id;
     public $exp_email;
     public $dest_email;
     public $path;
+    public $fake_path;
     public $message;
     public $creation_date;
 
@@ -30,5 +32,10 @@ class Transfer extends \PicORM\Model
         $now = new DateTime;
         $this->creation_date = $now->format('Y-m-d H:i:s');
     }
+
+ //    protected static function defineRelations()
+	// {
+	// 	self::addRelationOneToMany('id', Todo::class, 'category_id');
+	// }
 
 }

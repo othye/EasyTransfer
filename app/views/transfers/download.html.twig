@@ -4,12 +4,12 @@
 {#     <h1>Titre</h1>
 
     <div class="jumbotron">
-        <p>Le fichier: {{ file }}</p>
+        <p>{{ exp_email }}</p>
+        <p>vous invite à télécharger:</p>
+        <p>{{ file }}</p>
         <p>Taille: {{ size }}</p>
-        <p>a été envoyé à:  {{ dest_email }}</p>
-        <p>Celui-ci a été averti par email.</p>
-        <p>Au cas où, voici le lien de téléchargement:</p>
-		<a class="btn btn-primary" href="{{ url('download/') ~ fake}}" role="button">Télécharger</a>
+        <p>Cliquez ci-dessous pour télécharger le fichier: </p>
+        <a class="btn btn-primary" href="{{ url('download/') ~ fake}}" role="button">Télécharger</a>
     </div> #}
 
 <div class="row">
@@ -22,12 +22,12 @@
                         <div class="test">
                             <div class="losange"></div>
 
-                            <div class="bloc_success">
+                            <div class="bloc_download">
 
-                                <p><h2>Envoyé avec succès !</h2><br>
+                                <p><h2>{{ exp_email }}</h2><br>
+                                <h2 class="h2_download">Vous invite à télécharger :</h2>
                                 <span class="backgroundTextOpen">Fichier :</span><span class="backgroundTextEnd">{{ file }}</span><br><br>
-                                <span class="backgroundTextOpen">A :</span><span class="backgroundTextEnd">{{ dest_email }}</span><br><br>
-                                <h2>Un email lui a été envoyé.</p>
+                                <span class="backgroundTextOpen">Taille :</span><span class="backgroundTextEnd">{{ size }}</span></p>
                                 <a href="{{ url('download/') ~ fake}}"><button class="btnDownload">Télécharger</button></a>
 
                             </div>

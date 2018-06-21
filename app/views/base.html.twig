@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         {% block metas %}
             <meta charset="utf-8">
@@ -10,22 +10,45 @@
         
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ url('assets/css/main.css') }}">
+            <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
         {% endblock %}
         
-        <title>{% block title %}Title{% endblock %}</title>
+        <title>{% block title %}Easy Transfer{% endblock %}</title>
     </head>
 
   <body>
-    {% include "partials/navbar.html.twig" %}
+
+<header>
+    <div class="bloc_titre">
+            <div class="titre">
+                <p><span class="lettrYellow">E</span>asy<span class="lettrYellow">T</span>ransfer</p>
+            </div>
+        <div class="soulign">
+            <p>u</p>
+        </div>
+    </div>
+</header>
     
     <div class="container">
-        {% include "partials/flashbag.html.twig" %}
+      
         
         {% block content %}{% endblock %}
+      
     </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <span class="copyright">Copyright 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     {% block javascripts %}
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="{{ url('assets/js/main.js') }}"></script>
     {% endblock %}
   </body>
 </html>

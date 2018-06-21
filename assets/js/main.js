@@ -1,3 +1,3 @@
-$(function() {
-    // user/getTimer
-})
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});

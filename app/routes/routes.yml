@@ -1,25 +1,17 @@
+
 - path: 
   - /add
   controller: Controllers\TransferController::add
-  
+
+- path: 
+  - /download/(\d+)
+  controller: Controllers\TransferController::download
+
+- path: 
+  - /file/(\d+)
+  controller: Controllers\TransferController::grabFile
+    
 - path:
     - 
   controller: Controllers\TransferController::index
-
-
-# - path: 
-#   - /category/delete/(\d+)
-#   controller: Controllers\CategoryController::delete
-
-# - path: 
-#   - /category/add
-#   controller: Controllers\CategoryController::add
-
-# - path: 
-#   - /todo/delete/(\d+)
-#   controller: Controllers\TodoController::delete
-
-# - path: 
-#   - /todo/add
-#   controller: Controllers\TodoController::add
 

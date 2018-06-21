@@ -42,5 +42,9 @@ class Twig {
         die();   
     }
 
+    public function parse($template, $arguments = []) {
+        $arguments['flashbag'] = $this->flashbag;
+        return $this->twig->render($template, $arguments);  
+    }
 
 }

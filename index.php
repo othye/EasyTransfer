@@ -1,3 +1,4 @@
+
 <?php
 
 session_start();
@@ -13,12 +14,13 @@ if ($_ENV['APP_DEBUG']) {
 }
 
 $routes = Symfony\Component\Yaml\Yaml::parseFile(__DIR__.'/app/routes/routes.yml');
-
-$uri = str_replace($_SERVER['SCRIPT_NAME'], '', $_SERVER['PHP_SELF']);
+$uriRequest = (isset($_GET) && isset($_GET['page'])) ? $_GET['page'] : '/' ;
+$uri = trim(rtrim($uriRequest, '/'), '/');
 
 foreach ($routes as $name => $route) {
     foreach ($route['path'] as $path) {
-        if (preg_match('/^'.(str_replace('/', '\/', $path)).'$/', $uri, $matches)) {
+        
+        if (preg_match('/^'.(str_replace('/', '\/', trim($path, '/'))).'$/', $uri, $matches)) {
             
             list($class, $action) = explode('::', $route['controller'], 2);
 
@@ -37,4 +39,4 @@ foreach ($routes as $name => $route) {
     }
 }
 
-
+?>
