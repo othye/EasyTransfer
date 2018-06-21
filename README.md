@@ -1,6 +1,8 @@
 # µ-MVC, a micro framework for learning purposes
 
-µ-MVC is a microframework for learning MVC design pattern and object-oriented programming. This was built for my job at Access Code School, for my students.
+
+µ-MVC is a microframework for learning MVC design pattern and object-oriented programming. This was built for my job at Access Code School, for my students. (Anthony TOURNIER
+)
 
 Current version : 1.1.1
 
