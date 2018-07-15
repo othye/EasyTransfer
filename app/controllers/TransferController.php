@@ -187,7 +187,7 @@ class TransferController extends Controller {
         ]);
     }
 
-    // Fontion permette de convertir la taille du fichier du octets au Ko, Mo, Go, To
+    // Fontion permette de convertir la taille du fichier du octets au Ko, Mo, Go...
     public function formatBytes($size, $precision = 2){
 
         $base = log($size, 1024);
